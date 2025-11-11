@@ -6,7 +6,7 @@
 /*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 13:10:38 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/11 14:48:51 by sawijnbe         ###   ########.fr       */
+/*   Updated: 2025/11/11 18:56:33 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ char	*get_next_line(int fd)
 	static char	*buff;
 	int			readrt;
 
+	if (fd < 0 || BUFFER_SIZE < 1)
+		return (NULL);
 	if (str_chr(buff, '\n') != -1)
 		return (line_in_buff(&buff));
 	readrt = BUFFER_SIZE;

@@ -6,7 +6,7 @@
 /*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 13:12:08 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/11 17:21:12 by sawijnbe         ###   ########.fr       */
+/*   Updated: 2025/11/11 19:43:24 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@
 # if BUFFER_SIZE > 2000000
 #  undef BUFFER_SIZE
 #  define BUFFER_SIZE 666666
+# endif
+
+# if BUFFER_SIZE < 0
+#  undef BUFFER_SIZE
+#  define BUFFER_SIZE -1
 # endif
 
 # include <stdlib.h>
