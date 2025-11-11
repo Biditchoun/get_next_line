@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sawijnbe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 15:00:50 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/10 20:27:18 by sawijnbe         ###   ########.fr       */
+/*   Created: 2025/11/11 13:12:27 by sawijnbe          #+#    #+#             */
+/*   Updated: 2025/11/11 14:42:48 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,12 @@ int	str_chr(const char *s, int c)
 	int	i;
 
 	if (!s)
-		return (0);
+		return (-1);
 	i = -1;
 	while (s[++i])
 		if (s[i] == (unsigned char)c)
 			return (i);
-	return (i);
+	return (-1);
 }
 
 void	*rtnull_free(void *p1, void *p2)

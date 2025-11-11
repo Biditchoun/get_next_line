@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sawijnbe <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 18:48:26 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/10 20:33:09 by sawijnbe         ###   ########.fr       */
+/*   Created: 2025/11/11 13:12:08 by sawijnbe          #+#    #+#             */
+/*   Updated: 2025/11/11 14:50:55 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 66
+#  define BUFFER_SIZE 55
 # endif
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 
 int		str_len(const char *s);
 int		str_cpy(char *dest, const char *src);
