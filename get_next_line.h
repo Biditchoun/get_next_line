@@ -6,7 +6,7 @@
 /*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 13:12:08 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/11 19:37:32 by sawijnbe         ###   ########.fr       */
+/*   Updated: 2025/11/13 13:36:37 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 55
+#  define BUFFER_SIZE 66
 # endif
 
 # if BUFFER_SIZE > 2000000
