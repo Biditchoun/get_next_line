@@ -6,7 +6,7 @@
 /*   By: sawijnbe <sawijnbe@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 13:10:38 by sawijnbe          #+#    #+#             */
-/*   Updated: 2025/11/13 13:29:43 by sawijnbe         ###   ########.fr       */
+/*   Updated: 2025/11/18 14:43:55 by sawijnbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	read_into_buff(char **buff, int fd)
 	if (rt <= 0)
 		return (rt);
 	read_result[rt] = 0;
-	temp = malloc(str_len(*buff) + str_len(read_result) + 1);
+	temp = malloc(str_len(*buff) + rt + 1);
 	if (!temp)
 		free(*buff);
 	if (!temp)
